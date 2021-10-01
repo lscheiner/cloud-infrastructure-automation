@@ -5,6 +5,7 @@ variable "name_prefix"     { }
 variable "app_tags"     { }
 variable "jenkins-sshkey"     { }
 variable "instance_type"     { }
+variable "private_key_path" { }
 
 
 
@@ -17,6 +18,7 @@ module "jenkins-app" {
   app_tags = var.app_tags
   jenkins-sshkey = var.jenkins-sshkey
   instance_type = var.instance_type
+  private_key_path = var.private_key_path
 }
 
 output "jenkins-app-name" {

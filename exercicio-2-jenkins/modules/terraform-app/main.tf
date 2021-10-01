@@ -28,7 +28,7 @@ connection {
         user = "ubuntu"
         host = "${self.public_ip}"
         type     = "ssh"
-        private_key = "${file("/home/vagrant/terraform-app/slacko")}"
+        private_key = "${file(var.private_key_path)}"
       }
    vpc_security_group_ids = [aws_security_group.allow-jenkins.id]
    ami = data.aws_ami.jenkins.id

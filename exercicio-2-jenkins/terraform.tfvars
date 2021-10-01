@@ -6,3 +6,4 @@ name_prefix = "lscheiner"
 app_tags = {projeto = "jenkins-app"}
 jenkins-sshkey = "PUBLIC KEY"
 instance_type = "t2.micro"
+private_key_path ="/home/vagrant/terraform-app/slacko"
